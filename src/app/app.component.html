@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<body>
+  <main>
+    <router-outlet>
+        <mat-toolbar color="primary">
+            <mat-menu #appMenu="matMenu">
+              <button mat-menu-item>Settings</button>
+              <button mat-menu-item>Help</button>
+            </mat-menu>
+            
+            <button mat-icon-button [matMenuTriggerFor]="appMenu"  *ngIf="viewMenu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <span>GADM</span>
+            </mat-toolbar>
+    </router-outlet>
+  </main>
+</body>
