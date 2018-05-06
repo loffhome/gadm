@@ -25,7 +25,7 @@ import { ConfigComponent } from './config/config.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes=[
-  {path:'', component: LoginComponent},
+  {path:'', component: HomeComponent},
   {path:'config', component: ConfigComponent},
   {path:'login', component: LoginComponent}
 ];
