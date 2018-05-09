@@ -1,0 +1,25 @@
+.rectangle-1{
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  border-width: 1px;
+  border-color: blue;
+}
+
+.input-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.input-full-width {
+  width: 100%;
+}
+
+.loginStyles {
+  background-color:white;
+  color:white;
+  opacity: 0.6;
+}
+
