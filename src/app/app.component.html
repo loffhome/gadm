@@ -2,13 +2,13 @@
 <body>
   <main>
     <router-outlet>
-        <mat-toolbar color="primary">
+        <mat-toolbar color="primary"  *ngIf="router.url != '/login'">
             <mat-menu #appMenu="matMenu">
               <button mat-menu-item>Settings</button>
               <button mat-menu-item>Help</button>
             </mat-menu>
             
-            <button mat-icon-button [matMenuTriggerFor]="appMenu" *ngIf="viewMenu">
+            <button mat-icon-button [matMenuTriggerFor]="appMenu">
               <mat-icon>more_vert</mat-icon>
             </button>
             <span>GADM</span>

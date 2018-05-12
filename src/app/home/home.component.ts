@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
-import { globals } from '../../global';
 
 import {
   MatButtonModule,
@@ -19,13 +18,12 @@ import {
 export class HomeComponent implements OnInit {
   viewMenu:Boolean; 
   
-  constructor(public router: Router, public global: globals) { 
+  constructor(public router: Router) { 
     if(!localStorage.getItem('Session'))
-      this.router.navigateByUrl('login');
     
-    this.global.viewMenu=true;
-    this.viewMenu=true;
-            
+    {  
+      this.router.navigateByUrl('login');
+    }
   }
   ngOnInit() {
     document.body.classList.remove('fondo');
